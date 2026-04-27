@@ -13,4 +13,4 @@ git remote add origin <your-repo-url>
 git branch -M main 
 git push -u origin main
 git config --global --unset credential.helper
-git config --global --unset credential.helper
+git config --global credential.helper ""
