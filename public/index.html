@@ -1,25 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Crypto Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#0f1115;
+      font-family:Inter, Arial, sans-serif;
+      color:#f5f5f5;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      padding:40px;
+      max-width:700px;
+    }
+
+    .line{
+      width:80px;
+      height:2px;
+      background:#c9a96e;
+      margin:0 auto 30px;
+      opacity:0.8;
+    }
+
+    h1{
+      font-size:clamp(2.5rem, 7vw, 5rem);
+      font-weight:600;
+      letter-spacing:-2px;
+      margin-bottom:18px;
+    }
+
+    h1 span{
+      color:#c9a96e;
+    }
+
+    p{
+      font-size:1.05rem;
+      color:#b5b5b5;
+      line-height:1.7;
+      font-weight:400;
+    }
+
+    .domain{
+      margin-top:30px;
+      display:inline-block;
+      padding:12px 22px;
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:999px;
+      background:rgba(255,255,255,0.03);
+      color:#d8d8d8;
+      font-size:0.95rem;
+      letter-spacing:0.5px;
+      backdrop-filter: blur(10px);
+    }
+
+    .bg-circle{
+      position:absolute;
+      width:500px;
+      height:500px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(201,169,110,0.12), transparent 70%);
+      filter:blur(20px);
+      z-index:-1;
+    }
+  </style>
 </head>
 <body>
 
+  <div class="bg-circle"></div>
+
   <div class="container">
-    <h1>Crypto Price Tracker</h1>
+    <div class="line"></div>
 
-    <div id="status">Loading...</div>
+    <h1>I am <span>Your Name</span></h1>
 
-    <div class="card">
-      <p>Bitcoin: ₹<span id="btc">--</span></p>
-      <p>Ethereum: ₹<span id="eth">--</span></p>
+    <p>
+      Building ideas, learning technology, and creating things on the internet.
+    </p>
+
+    <div class="domain">
+      yourname.xyz
     </div>
-
-    <button id="refresh">Refresh</button>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
