@@ -1,0 +1,20 @@
+{
+  "name": "firebasetest",
+  "version": "1.0.0",
+  "description": "Cloud OS - Static site with Vercel Analytics",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve public",
+    "build": "cp node_modules/@vercel/analytics/dist/index.mjs public/vercel-analytics.js && echo 'Build complete'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}
