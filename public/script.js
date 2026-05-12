@@ -1,4 +1,7 @@
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from "@vercel/analytics"
+
+inject()
+
 const wallpaper = document.getElementById("wallpaper");
 const dock = document.getElementById("dock");
 const weather = document.getElementById("weather");
